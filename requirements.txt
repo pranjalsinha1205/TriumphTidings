@@ -1,0 +1,14 @@
+streamlit
+langchain
+langchain-classic
+langchain-community
+langchain-huggingface
+sentence-transformers
+langchain-groq
+pypdf
+langchain-chroma
+wikipedia
+duckduckgo-search
+pydantic
+requests
+dotenv

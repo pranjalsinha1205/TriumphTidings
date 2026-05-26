@@ -1,0 +1,17 @@
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.env/
+
+# Vector DB / local storage
+chroma_db/
+
+# OS junk
+.DS_Store
+Thumbs.db
