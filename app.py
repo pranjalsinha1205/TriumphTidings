@@ -1,5 +1,6 @@
-import runpy
 import sys
+import os
 
-sys.argv = ["streamlit", "run", "src/main.py", "--server.port=7860", "--server.address=0.0.0.0"]
-runpy.run_module("streamlit", run_name="__main__")
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
+
+exec(open("src/main.py").read())
