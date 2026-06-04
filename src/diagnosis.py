@@ -10,7 +10,12 @@ load_dotenv()
 
 API_SECRET = os.getenv("API_SECRET")
 
-OUTPUT_CSV = "triumph/data/summaries.csv"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+os.makedirs(DATA_DIR, exist_ok=True) 
+
+OUTPUT_CSV = os.path.join(DATA_DIR, "summaries.csv")
+
 
 PROMPT = """
 You are an emotional conversation summarizer. 
