@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-OUTPUT_CSV = "../data/conversations.csv"
+OUTPUT_CSV = "triumph/data/conversations.csv"
 
 def save_turn(session_id, turn_number, user_message, bot_message):
     convo = {

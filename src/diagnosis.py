@@ -10,7 +10,7 @@ load_dotenv()
 
 API_SECRET = os.getenv("API_SECRET")
 
-OUTPUT_CSV = "../data/summaries.csv"
+OUTPUT_CSV = "triumph/data/summaries.csv"
 
 PROMPT = """
 You are an emotional conversation summarizer. 
